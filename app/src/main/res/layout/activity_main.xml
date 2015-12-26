@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe1e0de" >
+
+    <Button
+        android:id="@+id/button_QRScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="扫描二维码" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_RFIDScan"
+        android:lines="32"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:nestedScrollingEnabled="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/button_RFIDScan"
+        android:layout_alignParentLeft="true" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button_QRScan"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="98dp"
+            android:id="@+id/tb_Results"></TableLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描RFID"
+        android:id="@+id/button_RFIDScan"
+        android:layout_below="@+id/button_QRScan"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

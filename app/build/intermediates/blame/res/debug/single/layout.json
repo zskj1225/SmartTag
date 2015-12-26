@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_title.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\activity_title.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_top.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\main_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\customprogressdialog.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\customprogressdialog.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_bottom.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\main_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rfid_main.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\rfid_main.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\customlistview.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\customlistview.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_center.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\main_center.xml"
+    },
+    {
+        "merged": "E:\\AndroidProj\\SmartTag\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast.xml",
+        "source": "E:\\AndroidProj\\SmartTag\\app\\src\\main\\res\\layout\\toast.xml"
+    }
+]

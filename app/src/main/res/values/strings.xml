@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartTag</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="sCopyright">Copyright © 2014 All rights reverved.</string>
+    <string name="btnQuery">&gt;&gt;&gt;&gt;Start&lt;&lt;&lt;&lt;</string>
+    <string name="lblEPC">No　　EPC Data</string>
+    <string name="sTotal">Total：0</string>
+    <string name="lblTimes">Times</string>
+    <string name="btnClear">Clean</string>
+    <string name="sStatusPlugout">You are not connected to the device!</string>
+    <string name="sDate">2012\–\08\–\23 Thur.</string>
+</resources>
