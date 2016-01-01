@@ -62,7 +62,6 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, RFIDActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				startActivityForResult(intent, SCANNIN_GREQUEST_CODE);
-				//startActivity(intent);
 			}
 		});
 

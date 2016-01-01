@@ -121,7 +121,7 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 
 	private void ListRefresh(String paramString) {
 		String[] sEPC = paramString.split(";");
-		if (sEPC.length > 1) {
+		if (sEPC.length > 0) {
 			String key = sEPC[0];
 			Intent resultIntent = new Intent();
 			Bundle bundle = new Bundle();
@@ -160,7 +160,7 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 	@Override
 	public void onStart() {
 		super.onStart();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd  EEEE", Locale.ENGLISH);
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd  EEEE", Locale.CHINA);
     	Date curDate = new Date(System.currentTimeMillis());//获取当前时间
 		txtDate.setText(formatter.format(curDate));
 	}
@@ -221,9 +221,9 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 	    			if (theClass.bSuccess) {
 	    				theClass.bOpened = !theClass.bOpened;
 	    				if (!theClass.bOpened)
-	    					theClass.btnQuery.setText(">>>>Start<<<<");
+	    					theClass.btnQuery.setText(">>>>开始<<<<");
 	    				else
-	    					theClass.btnQuery.setText(">>>>Stop<<<<");
+	    					theClass.btnQuery.setText(">>>>停止<<<<");
 	    			} else {
 	    				if (theClass.cMsg != null)
 	    					theClass.showToast(theClass.cMsg);
@@ -270,7 +270,7 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 							cMsg = "Device is running low battery, please charge!";
 						}
 					} catch (Exception e) {
-						cMsg = "Unknown error."; 
+						cMsg = "未知错误.";
                     	bSuccess = false;
 					}
                     finally {
@@ -324,8 +324,8 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 		lblTimes.setVisibility(View.VISIBLE);
 		clearScreen.setVisibility(View.VISIBLE);
 		epclist.setVisibility(View.VISIBLE);
-		txtStatus.setText("Welcome");
-		showToast("Recognized.", R.drawable.toastbox_auth_success);
+		txtStatus.setText("欢迎使用");
+		showToast("已经识别.", R.drawable.toastbox_auth_success);
 	}
 
 	@Override
@@ -338,11 +338,11 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 		epclist.setVisibility(View.INVISIBLE);
 		clearScreen.setVisibility(View.INVISIBLE);
 		txtTotal.setVisibility(View.INVISIBLE);
-		txtStatus.setText("You are not connected to the device!");
-		btnQuery.setText(">>>>Start<<<<");
+		txtStatus.setText("你没有连接设备!");
+		btnQuery.setText(">>>>开始<<<<");
 		bOpened = false;
 		if (!bFirstLoad) {
-			showToast("Plugout!", R.drawable.toastbox_remove);
+			showToast("拔出!", R.drawable.toastbox_remove);
 		}
 		bFirstLoad = false;
 		bCancel = false;
@@ -357,7 +357,7 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 	public void onStatusChange(IvrJackStatus arg0) {
 		switch (arg0) {
 			case ijsDetecting: 
-				pd = ProgressDialogEx.show(RFIDActivity.this, "Detecting...");
+				pd = ProgressDialogEx.show(RFIDActivity.this, "连接中...");
 				break;
 				
 			case ijsRecognized:
@@ -366,7 +366,7 @@ public class RFIDActivity extends Activity  implements IvrJackAdapter {
 				
 			case ijsUnRecognized:
 				pd.dismiss();
-				Toast.makeText(this, "Unrecognized!", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "无法识别!", Toast.LENGTH_SHORT).show();
 				break;
 		default:
 			break;
